@@ -1,5 +1,28 @@
-This is fan-made. Scratch has no idea this is happening. This is by users of Scratch and nobody that works at scratch.mit.edu
+# Scratch4.0
 
-If you would like to join making the fan-made project, (anyone is free to ask) please reach out to the owner of the repository at scratch (coolcoder1213 or INDIOUS111). Remember, you are free to ask to join whenever.
+### We are trying to develop a fourth version of Scratch with more features.
 
-There will be more to add to this repository later in the future, and this is just the beginning of what could be a huge project with many Scratchers.
+#### Database: SQLite for development, then switch to PostgreSQL
+#### Web-Framework: Flask
+#### Frontend: HTML/TailwindCSS
+
+## I am insane at making backends and database managment so I got our DB schema and API
+
+
+
+Some New Feature Ideas:
+- Live, Multiplayer Collab
+- Better Cloud Data Limits
+- Better Filtering
+- Python Support
+- Access to some websites data (eliminates some uses of things like scratchattach, sorry @1tim)
+- Package Index for Scratch
+- Better UI
+- Notifications
+- Live chat (like discord)
+- Green Flag converts project to javascript for no glitching
+- Built in scratchstats and scratch addons
+- Sign-in as your scratch account
+- Color Themes
+- Better Tutorials
+
