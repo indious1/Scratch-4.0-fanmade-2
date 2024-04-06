@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Scratch 4.0</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+  
+    h2 {
+       font-size: 28px;
+        margin-bottom: 20px;
+    }
+  
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+  
+    a:hover {
+        text-decoration: underline;
+    }
+  
+    .reference {
+      color: #007bff;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .mode-button {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        z-index: 9999; /* Ensure button appears above other content */
+    }
+</style>
+</head>
+<body>
+    <h1>Welcome to Scratch 4.0,</h1>
+    <h2>(also known as the open source Scratch Webviewer)</h2> 
+    <p class="reference">This is <a href="https://scratch.mit.edu">Scratch</a> for reference.</p>
+    <p class="reference"><a href="https://github.com/indious1/Scratch-4.0-fanmade-2">Our GitHub</a> for reference.</p>
+    
+    <!-- Light/Dark Mode Toggle Button -->
+    <button class="mode-button" onclick="toggleMode()">Light Mode</button>
+
+    <script>
+        function toggleMode() {
+            var body = document.body;
+            body.classList.toggle("dark-mode");
+            var button = document.querySelector(".mode-button");
+            if (body.classList.contains("dark-mode")) {
+                button.textContent = "Dark Theme";
+                // If dark mode is activated, change background color to dark
+                body.style.backgroundColor = "#333";
+                body.style.color = "#fff";
+            } else {
+                button.textContent = "Light Theme";
+                // If light mode is activated, change background color to light
+                body.style.backgroundColor = "#f0f0f0";
+                body.style.color = "#333";
+            }
+        }
+    </script>
+</body>
+</html>
