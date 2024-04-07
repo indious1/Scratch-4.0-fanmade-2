@@ -5,11 +5,11 @@ import sqlite3
 import urllib.request
 import scratchattach as scratch3
 from flask import Flask, render_template
-#from backend_functions import get_profile_information
+from backend_functions import get_profile_information
 
-#Lines 1-5 import the esential libraries needed to make this project work :)
+#Lines 1-10 import the esential libraries needed to make this project work :)
 
-start = time.time()
+start = time.time() 
 print("Updating all libraries before starting.")
 os.system("pip install -U scratchattach") 
 os.system("pip install -U sqlite3")
@@ -28,12 +28,18 @@ conn.close()
 end = time.time()
 elapsed = end-start
 print(f"Starting server! Time taken to run checks: {elapsed} seconds\n")
+os.system('clear')
 app = Flask('app', template_folder='site')
 
 @app.route('/')
 def main_page():
-    return render_template('main.html')
+  return render_template('main.html')
     
+@app.route('/users/<username>')
+def user_page():
+  print(username)
+  get_profile_information(username)
+  return render_template('user.html')
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+
+app.run(host='0.0.0.0', port=8080)
