@@ -1,0 +1,13 @@
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.mode-button {
+    color: #fff;
+    background-color: #555;
+}
+
+.mode-button:hover {
+    background-color: #777;
+}
